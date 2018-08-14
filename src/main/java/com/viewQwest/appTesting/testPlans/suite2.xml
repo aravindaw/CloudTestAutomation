@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--parallel="methods"/"false"-->
+<suite name="Test whale Hub API calls" parallel="true" thread-count="10" verbose="10">
+    <test name="TC01">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC09_CreateHub"/>
+        </classes>
+    </test>
+    <test name="TC02">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC10_FindHubById"/>
+        </classes>
+    </test>
+    <test name="TC03">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC11_FindHubBySerialNumber"/>
+        </classes>
+    </test>
+    <test name="TC04">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC12_UpdateHub"/>
+        </classes>
+    </test>
+</suite>

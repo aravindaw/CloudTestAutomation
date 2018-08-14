@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--parallel="methods"/"false"-->
+<suite name="Test whale User API calls" parallel="true" thread-count="10" verbose="10">
+    <test name="TC01">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC01_GetAllUsers"/>
+        </classes>
+    </test>
+    <test name="TC02">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC02_CreateNewUser"/>
+        </classes>
+    </test>
+    <test name="TC03">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC03_FindUserByEmail"/>
+        </classes>
+    </test>
+    <test name="TC04">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC04_FindAllUsersByFirstName"/>
+        </classes>
+    </test>
+    <test name="TC05">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC05_FindUsersByFirstNameAndLevel"/>
+        </classes>
+    </test>
+    <test name="TC06">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC06_UpdateUser"/>
+        </classes>
+    </test>
+    <test name="TC07">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC07_GetAllUsersByParentId"/>
+        </classes>
+    </test>
+    <test name="TC08">
+        <classes>
+            <class name="com.viewQwest.appTesting.scripts.WTC08_GetAllUsersByUserLevel"/>
+        </classes>
+    </test>
+</suite>
